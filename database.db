@@ -1,0 +1,25 @@
+CREATE TABLE users (
+ id INTEGER PRIMARY KEY AUTOINCREMENT,
+ name TEXT,
+ email TEXT,
+ password TEXT
+);
+
+CREATE TABLE parking_areas (
+ id INTEGER PRIMARY KEY AUTOINCREMENT,
+ name TEXT,
+ total_slots INTEGER
+);
+
+CREATE TABLE slots (
+ id INTEGER PRIMARY KEY AUTOINCREMENT,
+ parking_id INTEGER,
+ status TEXT
+);
+
+CREATE TABLE bookings (
+ id INTEGER PRIMARY KEY AUTOINCREMENT,
+ user_id INTEGER,
+ slot_id INTEGER,
+ time TEXT
+);

@@ -1,0 +1,5 @@
+flask
+flask-cors
+sqlite3
+pandas
+scikit-learn
